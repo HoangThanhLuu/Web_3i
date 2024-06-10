@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-service-title: #00a455;
+}
+
+/* Common */
+
+.justify-item-end {
+    justify-content: flex-end;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+/* Main */
+.service-title {
+   
+
+    color: var(--main-service-title);
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.service-title::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 97px;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: var(--main-service-title);
+}
+
+.content-services span {
+   
+}
+
+.container-service-content {
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.content-services .box-wrapper {
+    margin: 0px 32px;
+    flex-direction: column;
+    /* border: 1px solid var(--main-service-title); */
+    /* border-radius: 12px; */
+    /* background-color: #F8F8F8; */
+    padding: 30px;
+    max-width: 40%;
+    height: fit-content;
+}
+
+.img-service-content {
+    background-image: url(https://www.valuecoders.com/blog/wp-content/uploads/2020/11/What-is-Desktop-Application_-scaled.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* margin-left: 5%; */
+}
+
+.img-service-content2 {
+    background-image: url(https://www.sliderrevolution.com/wp-content/uploads/2020/09/Screenshot_1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+}
+
+.img-service-content3 {
+    background-image: url(https://funix.edu.vn/wp-content/uploads/2023/07/lap-trinh-mobile-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.img-service-content4 {
+    background-image: url(https://media.istockphoto.com/id/1401460590/vi/anh/doanh-nh%C3%A2n-l%C3%A0m-vi%E1%BB%87c-tr%C3%AAn-m%C3%A1y-t%C3%ADnh-x%C3%A1ch-tay-v%E1%BB%9Bi-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-qu%E1%BA%A3n-l%C3%BD-t%C3%A0i-li%E1%BB%87u.jpg?s=612x612&w=0&k=20&c=q_P0Ln3khZuS8hCLVYygv2MRO5qBYijQyTWLr0LtHag=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40%
+}
+
+.img-service-content5 {
+    background-image: url(https://cdn.discordapp.com/attachments/1241216854467285066/1243465572398927902/4458680.jpg?ex=6651930e&is=6650418e&hm=5777f7525efbf02ad2ac9fc89e821228be299ae79f980e492c54e0063fcd2455&s);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+
+.container-service-content img {
+    width: 100%;
+    max-height: fit-content;
+    align-self: center;
+}
+
+.service-sub-title {
+  
+    font-weight: 700;
+    font-style: normal;
+    color: var(--main-service-title);
+    font-weight: bold;
+}
+
+.service-content {
+  
+   
+    margin: 16px 0;
+}
+
+.service-content ul li {
+   
+    list-style-type: none;
+    position: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.service-content ul li svg {
+    color: var(--main-service-title);
+    margin-right: 8px;
+}
+
+.service-content .third-line {
+    align-self: flex-start;
+    margin-top: -6px;
+   
+}
+
+.service-content .second-line {
+    align-self: flex-start;
+    margin-top: -6px;
+   
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+
+    .img-service-content,
+    .img-service-content2,
+    .img-service-content3,
+    .img-service-content4,
+    .img-service-content5 {
+        display: none;
+    }
+
+    .content-services .box-wrapper {
+        max-width: 100%;
+    }
+}

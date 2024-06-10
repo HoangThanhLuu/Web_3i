@@ -1,0 +1,23 @@
+.slick-list {
+    margin: 0 -10px;
+    padding-top: 10px;
+    /* Adjust the negative margin to create the desired total gap */
+}
+
+.slick-slide>div {
+    padding: 0 8px;
+    /* Adjust the padding to create half of the gap on each side of a slide */
+}
+
+.bong {
+    box-shadow : 0px 0px 10px rgba(146, 146, 146, 0.25);
+}
+
+
+
+@media (min-width : 1024px ) {
+    .slick-dots li button:before {
+        font-size: 10px; /* Change the size as needed */
+        /* Optional: Change the color of the dots */
+    }
+}

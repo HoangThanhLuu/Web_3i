@@ -1,0 +1,24 @@
+
+.blinking-dot {
+  /* position: absolute; */
+  width: 20px;
+  height: 20px;
+  background-color: rgb(174, 214, 118); 
+  border-radius: 50%;
+  animation: blink 0.8s infinite ease-in-out;
+  transform: translate(-50%, -50%) scale(1); 
+  box-shadow: 0 0 10px rgba(174, 214, 118, 0.5);
+  /* z-index: 9999; */
+}
+
+@keyframes blink {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}

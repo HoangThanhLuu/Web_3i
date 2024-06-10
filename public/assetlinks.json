@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.iii.SmartWork",
+               "sha256_cert_fingerprints": ["E3:EA:36:E8:14:7A:42:72:C2:11:45:17:79:3E:57:31:A4:08:2D:23:51:0A:44:66:05:35:2B:1C:AC:FD:02:0B"] }
+}]

@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4MK42W7D8E.com.iii.smartwork",
+        "paths": [
+          "NOT \/api\/*",
+          "NOT \/",
+          "*"
+        ]
+      }
+    ]
+  }
+}

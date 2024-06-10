@@ -1,0 +1,11 @@
+/* Common */
+.align-self-center {
+    align-self: center;
+  }
+  
+
+  @media (max-width: 780px){
+    .info-location{
+        display: none;
+    }
+  }

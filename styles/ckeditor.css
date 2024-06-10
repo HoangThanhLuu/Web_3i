@@ -1,0 +1,157 @@
+
+.res_2708 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+/* Các điều kiện media query để làm cho nó responsive */
+@media (min-width: 689px) {
+  .res_2708 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+.res_2708_table_4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+
+/* Các điều kiện media query để làm cho nó responsive */
+@media (min-width: 640px) {
+  .res_2708_table_4 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .res_2708_table_4 {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+
+
+.res_2709_table_2 {
+  flex-direction: column;
+  
+
+} 
+.res_2709_table_2 div:nth-child(2){
+  /* flex-direction: column; */
+  max-width: 100% ;
+  padding: 8px;
+
+} 
+@media (min-width: 1024px) {
+.res_2709_table_2 {
+  flex-direction: row;
+}
+.res_2709_table_2 div:nth-child(2){
+  /* flex-direction: column; */
+  max-width: 250px;
+} 
+}
+
+.responsive_image_2709 {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Để giữ cho ảnh không bị lỗi margin-bottom */
+  margin: 0 auto; /* Để canh giữa ảnh trong phần tử cha */
+}
+.res_2709_table_3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+
+/* Các điều kiện media query để làm cho nó responsive */
+@media (min-width: 640px) {
+  .res_2709_table_3 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .res_2709_table_3 {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+.res_2709_table_4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+
+/* Các điều kiện media query để làm cho nó responsive */
+@media (min-width: 1024px) {
+  .res_2709_table_4 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+
+
+
+
+.res_2711_table_2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+
+/* Các điều kiện media query để làm cho nó responsive */
+@media (min-width: 640px) {
+  .res_2711_table_2 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .res_2711_table_2 {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+.res_2710_trungtam {
+  min-width: 100%
+}
+@media (min-width: 600px) {
+  .res_2710_trungtam {
+    min-width: 186px
+  }
+}
+
+
+.res_2710 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+@media (min-width: 640px) {
+  .res_2710 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .res_2710 {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+
+.res_2710_table_3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+@media (min-width: 640px) {
+  .res_2710_table_3 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}
+
+.res_2710_table_4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+}
+@media (min-width: 1024px) {
+  .res_2710_table_4 {
+    grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+  }
+}

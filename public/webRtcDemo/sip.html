@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="remoteVideo"></video>
+    <video id="localVideo" muted="muted"></video>
+    <script src="./js/sip-0.21.2.min.js"></script>
+    <script>
+        async function sip_js() {
+            const simpleUser = SimpleUser;
+            const server = "wss://sip.example.com";
+            const aor = "sip:alice@example.com";
+            const options = {
+                aor,
+                media: {
+                    local: {
+                        video: (document.getElementById('localVideo'))
+                    },
+                    remote: {
+                        video: (document.getElementById('remoteVideo'))
+                    }
+                }
+            };
+            simpleUser = new SimpleUser(server, options);
+    
+            // Connect to server
+            await simpleUser.connect();
+    
+            // Register to receive inbound calls
+            await simpleUser.register();
+    
+            simple.call('bob@example.com');
+    
+            const delegate = {
+                onCallReceived: async () => {
+                    console.log('Incoming Call!');
+                    await simpleUser.answer();
+                }
+            };
+    
+            simpleUser.hold();
+    
+            simpleUser.unhold();
+            simpleUser.sendDTMF('1');
+            simpleUser.hangup(); 
+        }
+    </script>
+</body>
+</html>

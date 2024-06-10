@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'YourFontName';
+    src: url('/public/font/svn/SVN-Gotham\ Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'YourFontName', sans-serif;
+  }
+  
